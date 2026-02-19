@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Agente - Honda</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="agent-header">
+        <div class="user-info">
+            <span id="userEmail">Cargando asesor...</span>
+            <button id="btnLogout" class="btn-secondary">Cerrar Sesión</button>
+        </div>
+        <h1>Panel de Seguimiento</h1>
+    </header>
+
+    <main class="container">
+        <section class="leads-section">
+            <div class="section-header">
+                <h2>Leads Asignados</h2>
+                <div class="filters">
+                    <select id="filterStatus">
+                        <option value="todos">Todos</option>
+                        <option value="nuevo">Nuevos</option>
+                        <option value="seguimiento">En Seguimiento</option>
+                        <option value="vendido">Vendido</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="leadsContainer" class="leads-grid">
+                <p class="loading">Cargando leads desde la base de datos...</p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="agent.js"></script>
+</body>
+</html>

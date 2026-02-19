@@ -68,3 +68,23 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
+
+.leads-grid { display: grid; gap: 1rem; margin-top: 1rem; }
+
+.lead-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 6px solid #cbd5e1;
+}
+
+.status-nuevo { border-left-color: #2563eb; }
+.status-seguimiento { border-left-color: #f59e0b; }
+.status-vendido { border-left-color: #10b981; }
+
+.btn-wa { background: #25d366; color: white; border: none; padding: 8px 12px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+
+.date { font-size: 0.8rem; color: #64748b; }
